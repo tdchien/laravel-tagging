@@ -1,6 +1,6 @@
-<?php namespace Conner\Tagging\Model;
+<?php namespace Chientd\Tagging\Model;
 
-use Conner\Tagging\Contracts\TaggingUtility;
+use Chientd\Tagging\Contracts\TaggingUtility;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**
@@ -100,7 +100,7 @@ class Tag extends Eloquent
      */
     public function group()
     {
-        return $this->belongsTo('\Conner\Tagging\Model\TagGroup', 'tag_group_id');
+        return $this->belongsTo('\Chientd\Tagging\Model\TagGroup', 'tag_group_id');
     }
 
     /**

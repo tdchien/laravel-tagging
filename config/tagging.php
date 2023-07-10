@@ -6,12 +6,12 @@ return [
 	'primary_keys_type' => 'integer', // 'string' or 'integer'
 		
 	// Value of are passed through this before save of tags
-	'normalizer' => '\Conner\Tagging\Util::slug',
+	'normalizer' => '\Chientd\Tagging\Util::slug',
 	
 	// Display value of tags are passed through (for front end display)
 	'displayer' => '\Illuminate\Support\Str::title',
 	
-	// Database connection for Conner\Taggable\Tag model to use
+	// Database connection for Chientd\Taggable\Tag model to use
 // 	'connection' => 'mysql',
 	
 	// When deleting a model, remove all the tags first
@@ -21,11 +21,11 @@ return [
 	'delete_unused_tags'=>true,
 
 	// Model to use to store the tags in the database
-	'tag_model'=>'\Conner\Tagging\Model\Tag',
+	'tag_model'=>'\Chientd\Tagging\Model\Tag',
 
 	// Delimiter used within tags
 	'delimiter' => '-',
 	
 	// Model to use for the relation between tags and tagged records
-	'tagged_model' => '\Conner\Tagging\Model\Tagged',
+	'tagged_model' => '\Chientd\Tagging\Model\Tagged',
 ];

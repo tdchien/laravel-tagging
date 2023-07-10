@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Conner\\Tagging\\": "src/"
+            "Chientd\\Tagging\\": "src/"
         }
     },
     "autoload-dev": {
@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Conner\\Tagging\\Providers\\TaggingServiceProvider"
+                "Chientd\\Tagging\\Providers\\TaggingServiceProvider"
             ]
         }
     }

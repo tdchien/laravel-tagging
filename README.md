@@ -31,12 +31,12 @@ The service provider does not load on every page load, so it should not slow dow
 
 ```php
 'providers' => [
-	\Conner\Tagging\Providers\TaggingServiceProvider::class,
+	\Chientd\Tagging\Providers\TaggingServiceProvider::class,
 ];
 ```
 Then publish the configurations and migrations by:
 ```bash
-php artisan vendor:publish --provider="Conner\Tagging\Providers\TaggingServiceProvider"
+php artisan vendor:publish --provider="Chientd\Tagging\Providers\TaggingServiceProvider"
 php artisan migrate
 ```
 
@@ -50,7 +50,7 @@ In app\bootstrap\app.php
 // Add this line in your config section
 $app->configure('tagging');
 // Add this line in your service provider section
-$app->register(Conner\Tagging\Providers\LumenTaggingServiceProvider::class);
+$app->register(Chientd\Tagging\Providers\LumenTaggingServiceProvider::class);
 ```
 
 After these two steps are done, you can edit config/tagging.php with your prefered settings.
@@ -58,7 +58,7 @@ After these two steps are done, you can edit config/tagging.php with your prefer
 #### Setup your models
 ```php
 class Article extends \Illuminate\Database\Eloquent\Model {
-	use \Conner\Tagging\Taggable;
+	use \Chientd\Tagging\Taggable;
 }
 ```
 
@@ -86,7 +86,7 @@ Article::withAllTags(['Gardening', 'Cooking'])->get(); // only fetch articles wi
 
 Article::withoutTags(['Gardening', 'Cooking'])->get(); // only fetch articles without all tags listed
 
-Conner\Tagging\Model\Tag::where('count', '>', 2)->get(); // return all tags used more than twice
+Chientd\Tagging\Model\Tag::where('count', '>', 2)->get(); // return all tags used more than twice
 
 Article::existingTags(); // return collection of all existing tags on any articles
 ```

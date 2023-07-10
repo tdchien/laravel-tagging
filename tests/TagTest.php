@@ -1,6 +1,6 @@
 <?php
 
-use Conner\Tagging\Model\Tag;
+use Chientd\Tagging\Model\Tag;
 
 class TagTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Conner\Tagging\Util;
+use Chientd\Tagging\Util;
 
 class UtilTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Conner\Tagging\Console\Commands;
+namespace Chientd\Tagging\Console\Commands;
 
-use Conner\Tagging\Contracts\TaggingUtility;
-use Conner\Tagging\Model\TagGroup;
+use Chientd\Tagging\Contracts\TaggingUtility;
+use Chientd\Tagging\Model\TagGroup;
 use Illuminate\Console\Command;
 
 

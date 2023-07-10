@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use Conner\Tagging\Model\Tag;
-use Conner\Tagging\Model\TagGroup;
+use Chientd\Tagging\Model\Tag;
+use Chientd\Tagging\Model\TagGroup;
 
 class TagGroupTest extends TestCase
 {

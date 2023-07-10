@@ -1,10 +1,10 @@
 <?php
 
-namespace Conner\Tagging\Providers;
+namespace Chientd\Tagging\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Conner\Tagging\Contracts\TaggingUtility;
-use Conner\Tagging\Util;
+use Chientd\Tagging\Contracts\TaggingUtility;
+use Chientd\Tagging\Util;
 
 /**
  * Copyright (C) 2014 Robert Conner
@@ -13,7 +13,7 @@ class TaggingServiceProvider extends ServiceProvider
 {
 
 	protected $commands = [
-		\Conner\Tagging\Console\Commands\GenerateTagGroup::class
+		\Chientd\Tagging\Console\Commands\GenerateTagGroup::class
 	];
 
 

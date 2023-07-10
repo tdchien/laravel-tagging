@@ -1,6 +1,6 @@
-<?php namespace Conner\Tagging\Model;
+<?php namespace Chientd\Tagging\Model;
 
-use Conner\Tagging\Contracts\TaggingUtility;
+use Chientd\Tagging\Contracts\TaggingUtility;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 /**

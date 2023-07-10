@@ -1,6 +1,6 @@
-<?php namespace Conner\Tagging;
+<?php namespace Chientd\Tagging;
 
-use Conner\Tagging\Contracts\TaggingUtility;
+use Chientd\Tagging\Contracts\TaggingUtility;
 
 /**
  * Utility functions to help with various tagging functionality.
@@ -231,6 +231,6 @@ class Util implements TaggingUtility
 	 */
 	public function tagModelString()
 	{
-		return config('tagging.tag_model', '\Conner\Tagging\Model\Tag');
+		return config('tagging.tag_model', '\Chientd\Tagging\Model\Tag');
 	}
 }

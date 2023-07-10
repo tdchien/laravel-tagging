@@ -1,11 +1,11 @@
 <?php
 
-namespace Conner\Tagging;
+namespace Chientd\Tagging;
 
-use Conner\Tagging\Contracts\TaggingUtility;
-use Conner\Tagging\Events\TagAdded;
-use Conner\Tagging\Events\TagRemoved;
-use Conner\Tagging\Model\Tagged;
+use Chientd\Tagging\Contracts\TaggingUtility;
+use Chientd\Tagging\Events\TagAdded;
+use Chientd\Tagging\Events\TagRemoved;
+use Chientd\Tagging\Model\Tagged;
 use Illuminate\Database\Eloquent\Collection;
 
 /**
@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Collection;
  */
 trait Taggable
 {
-	/** @var \Conner\Tagging\Contracts\TaggingUtility **/
+	/** @var \Chientd\Tagging\Contracts\TaggingUtility **/
 	static $taggingUtility;
 
     /**
@@ -59,7 +59,7 @@ trait Taggable
 	 */
 	public function tagged()
 	{
-		return $this->morphMany(config('tagging.tagged_model', 'Conner\Tagging\Model\Tagged'), 'taggable')->with('tag');
+		return $this->morphMany(config('tagging.tagged_model', 'Chientd\Tagging\Model\Tagged'), 'taggable')->with('tag');
 	}
 
 	/**
