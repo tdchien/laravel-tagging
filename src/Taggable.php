@@ -59,7 +59,7 @@ trait Taggable
 	 */
 	public function tagged()
 	{
-		return $this->morphMany(config('tagging.tagged_model', 'Chientd\Tagging\Model\Tagged'), 'taggable')->with('tag');
+		return $this->morphMany(config('tagging.tagged_model', '\Chientd\Tagging\Model\Tagged'), 'taggable')->with('tag');
 	}
 
 	/**
