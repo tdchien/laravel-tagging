@@ -1,3 +1,7 @@
+Fork of rtconner/laravel-tagging for fix some problem for Laravel 5.0
+
+---
+
 Laravel Taggable Trait
 ============
 
