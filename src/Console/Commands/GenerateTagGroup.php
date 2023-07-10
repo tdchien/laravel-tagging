@@ -5,6 +5,7 @@ namespace Chientd\Tagging\Console\Commands;
 use Chientd\Tagging\Contracts\TaggingUtility;
 use Chientd\Tagging\Model\TagGroup;
 use Illuminate\Console\Command;
+use Symfony\Component\Console\Input\InputArgument;
 
 
 class GenerateTagGroup extends Command
